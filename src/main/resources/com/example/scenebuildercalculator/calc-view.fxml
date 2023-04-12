@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="413.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuildercalculator.CalcController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="47.0" prefWidth="316.0">
+      <children>
+         <TextField fx:id="left" onKeyPressed="#onLeftAction" prefHeight="103.0" prefWidth="85.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+      
+                   <Label fx:id="operationSign" alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="50.0" text="+">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Label>
+         <TextField fx:id="right" onKeyPressed="#onRightAction" prefHeight="89.0" prefWidth="85.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+         <Label fx:id="equationSign" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="10.0" prefHeight="47.0" prefWidth="51.0" text="=" translateX="27.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Label>
+         <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" layoutX="274.0" layoutY="10.0" prefHeight="51.0" prefWidth="51.0" translateX="41.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="311.0">
+      <children>
+          <Button fx:id="plusBtn" alignment="CENTER" contentDisplay="CENTER" onAction="#onPlusClick" prefHeight="57.0" prefWidth="55.0" text="+" translateX="-49.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Button>
+         <Button fx:id="minusBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="10.0" onAction="#onMinusClick" prefHeight="57.0" prefWidth="55.0" text="-" translateX="-49.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Button>
+         <Button fx:id="divBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="10.0" onAction="#onDivClick" prefHeight="57.0" prefWidth="55.0" text="/" translateX="-49.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Button>
+         <Button fx:id="multBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="10.0" onAction="#onMultClick" prefHeight="57.0" prefWidth="55.0" text="*" translateX="-49.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Button>
+         <Button fx:id="eqBtn" alignment="CENTER" layoutX="208.0" layoutY="10.0" onAction="#onEqClick" prefHeight="57.0" prefWidth="55.0" text="=" translateX="-23.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>
